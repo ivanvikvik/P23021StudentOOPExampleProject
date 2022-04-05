@@ -8,12 +8,12 @@ Student::Student() {
 	alive = true;
 }
 
-Student::Student(string n, int a, double m, char s, bool al) {
-	name = n;
-	age = a;
-	mark = m;
-	sex = s;
-	alive = al;
+Student::Student(string name, int age, double mark, char sex, bool alive) {
+	this->name = name;
+	this->age = age;
+	this->mark = mark;
+	this->sex = sex;
+	this->alive = alive;
 }
 Student::~Student() {
 
@@ -23,17 +23,17 @@ string Student::getName() {
 	return name;
 }
 
-void Student::setName(string n) {
-	name = n;
+void Student::setName(string name) {
+	this->name = name;
 }
 
 int Student::getAge() {
 	return age;
 }
 
-void Student::setAge(int a) {
-	if (a >= 14 && a <= 70) {
-		age = a;
+void Student::setAge(int age) {
+	if (age >= 14 && age <= 70) {
+		this->age = a;
 	}
 }
 
@@ -41,9 +41,9 @@ double Student::getMark() {
 	return mark;
 }
 
-void Student::setMark(double m) {
-	if (m >= 0 && m <= 10) {
-		mark = m;
+void Student::setMark(double mark) {
+	if (mark >= 0 && mark <= 10) {
+		this->mark = m;
 	}
 }
 
@@ -51,9 +51,9 @@ char Student::getSex() {
 	return sex;
 }
 
-void Student::setSex(char s) {
-	if (s == 'm' || s == 'f') {
-		sex = s;
+void Student::setSex(char sex) {
+	if (sex == 'm' || sex == 'f') {
+		this->sex = s;
 	}
 }
 
@@ -61,8 +61,8 @@ bool Student::isAlive() {
 	return alive;
 }
 
-void Student::setAlive(bool al) {
-	alive = al;
+void Student::setAlive(bool alive) {
+	this->alive = alive;
 }
 
 string Student::getInfo() {

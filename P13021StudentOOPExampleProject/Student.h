@@ -10,7 +10,7 @@ private:
 	bool alive;
 public:
 	Student();
-	Student(string n, int a, double m, char s, bool al);
+	Student(string name, int age, double mark, char sex, bool alive);
 	~Student();
 
 	string getName();
