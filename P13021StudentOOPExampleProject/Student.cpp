@@ -33,7 +33,7 @@ int Student::getAge() {
 
 void Student::setAge(int age) {
 	if (age >= 14 && age <= 70) {
-		this->age = a;
+		this->age = age;
 	}
 }
 
@@ -43,7 +43,7 @@ double Student::getMark() {
 
 void Student::setMark(double mark) {
 	if (mark >= 0 && mark <= 10) {
-		this->mark = m;
+		this->mark = mark;
 	}
 }
 
@@ -53,7 +53,7 @@ char Student::getSex() {
 
 void Student::setSex(char sex) {
 	if (sex == 'm' || sex == 'f') {
-		this->sex = s;
+		this->sex = sex;
 	}
 }
 
