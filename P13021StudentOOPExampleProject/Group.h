@@ -12,14 +12,14 @@ public:
 	Group();
 	Group(string name);
 	Group(string name, Student* list, int size);
-
-	//get/set
+	~Group();
 
 	void add(Student student);
 	Student get(int index);
 	int getSize();
+	string getName();
+	void setName(string name);
 
 	string getInfo();
-
 };
 
