@@ -1,6 +1,13 @@
 ﻿#include "Student.h"
 
+int Student::count = 0;
+
+int Student::getCount() {
+	return count;
+}
+
 Student::Student() {
+	count++;
 	name = "no name";
 	age = 14;
 	mark = 4;
@@ -9,14 +16,16 @@ Student::Student() {
 }
 
 Student::Student(string name, int age, double mark, char sex, bool alive) {
+	count++;
 	this->name = name;
 	this->age = age;
 	this->mark = mark;
 	this->sex = sex;
 	this->alive = alive;
 }
-Student::~Student() {
 
+Student::~Student() {
+	count--;
 }
 
 string Student::getName() {
@@ -32,7 +41,7 @@ int Student::getAge() {
 }
 
 void Student::setAge(int age) {
-	if (age >= 14 && age <= 70) {
+	if (age >= MIN_STUDENT_AGE && age <= MAX_STUDENT_AGE) {
 		this->age = age;
 	}
 }
@@ -42,7 +51,7 @@ double Student::getMark() {
 }
 
 void Student::setMark(double mark) {
-	if (mark >= 0 && mark <= 10) {
+	if (mark >= MIN_MARK && mark <= MAX_MARK) {
 		this->mark = mark;
 	}
 }
