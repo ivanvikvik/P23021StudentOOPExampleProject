@@ -1,6 +1,7 @@
 #pragma once
 #include "Student.h"
 
+// русские комментарии
 class Group
 {
 private:
