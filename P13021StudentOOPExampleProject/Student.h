@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include "Header.h"
 
+// entity-class
 class Student {
 private:
 	static int count;

@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "Student.h"
 
-// русские комментарии
+// entity-class
 class Group
 {
 private:
