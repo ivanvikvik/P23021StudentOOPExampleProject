@@ -1,7 +1,7 @@
-#pragma once
+п»ї#pragma once
 #include "Student.h"
 
-// русские комментарии
+// СЂСѓСЃСЃРєРёРµ РєРѕРјРјРµРЅС‚Р°СЂРёРё
 class Group
 {
 private:

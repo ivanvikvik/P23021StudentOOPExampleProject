@@ -1,4 +1,4 @@
-#include "Group.h"
+﻿#include "Group.h"
 
 int main() {
 	Group group1("10a");
