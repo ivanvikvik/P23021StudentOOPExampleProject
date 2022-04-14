@@ -62,7 +62,7 @@ string Group::getInfo(){
 	return msg;
 }
 
-void Group::add(Student student) {
+void Group::add(Student student) {	
 	if (list == NULL) {
 		list = new Student[1];
 		list[0] = student;

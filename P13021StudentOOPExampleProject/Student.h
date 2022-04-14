@@ -1,5 +1,7 @@
 ﻿#pragma once
 #include "Header.h"
+#include "Group.h"
+
 
 // entity-class
 class Student {

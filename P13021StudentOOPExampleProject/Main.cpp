@@ -8,7 +8,7 @@ void changeMark(Student& st) {
 
 int main() {
 	//Group group1("10a");
-	//Group group2("10b");
+	Group group2("10b");
 
 	Student s1("Alex", 14, 9, 'm', true);
 
