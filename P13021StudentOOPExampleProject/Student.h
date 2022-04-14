@@ -3,6 +3,8 @@
 
 // entity-class
 class Student {
+	friend void changeMark(Student& st);
+
 private:
 	static int count;
 
