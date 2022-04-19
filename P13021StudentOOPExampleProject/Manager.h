@@ -12,8 +12,8 @@ public:
 
 	bool checkStudent(Group group, Student student);*/
 
-	double calculateAvgMark(Group group);
-	double calculateAvgAge(Group group);
+	double calculateAvgMark(Group& group);
+	double calculateAvgAge(Group& group);
 
 };
 

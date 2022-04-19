@@ -1,6 +1,6 @@
 #include "Manager.h"
 
-double Manager::calculateAvgMark(Group group) {
+double Manager::calculateAvgMark(Group& group) {
 	double avg = 0;
 	
 	for (int i = 0; i < group.size; i++)
@@ -11,7 +11,7 @@ double Manager::calculateAvgMark(Group group) {
 	return avg / group.size;
 }
 
-double Manager::calculateAvgAge(Group group) {
+double Manager::calculateAvgAge(Group& group) {
 	double avg = 0;
 
 	for (int i = 0; i < group.size; i++)
