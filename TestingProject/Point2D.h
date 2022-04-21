@@ -19,6 +19,10 @@ public:
 	Point2D sub(Point2D point) const;
 	int mul(Point2D point) const;
 
+
+	Point2D operator +(Point2D point) const;
+
+
 	string getInfo();
 };
 
