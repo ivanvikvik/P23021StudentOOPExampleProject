@@ -1,4 +1,6 @@
 ﻿#include "Group.h"
+#include "Leader.h"
+
 
 void changeMark(Student& st) {
 	srand(time(0));
@@ -7,14 +9,16 @@ void changeMark(Student& st) {
 }
 
 int main() {
+	Leader leader1;
+	leader1.
 	//Group group1("10a");
-	Group group2("10b");
+	/*Group group2("10b");
 
 	Student s1("Alex", 14, 9, 'm', true);
 
 	cout << "Before: " << s1.getInfo() << endl;
 	changeMark(s1);
-	cout << "After: " << s1.getInfo() << endl;
+	cout << "After: " << s1.getInfo() << endl;*/
 
 	//Student s2("Ilya", 15, 4, 'm', false);
 	//Student s3("Anna", 15, 8, 'f', true);
