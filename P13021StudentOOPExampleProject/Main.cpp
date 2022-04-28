@@ -10,7 +10,9 @@ void changeMark(Student& st) {
 
 int main() {
 	Leader leader1;
-	leader1.
+
+	cout << leader1.getInfo() << endl;
+
 	//Group group1("10a");
 	/*Group group2("10b");
 
