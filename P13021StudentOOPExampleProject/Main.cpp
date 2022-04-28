@@ -9,6 +9,8 @@ void changeMark(Student& st) {
 }
 
 int main() {
+	Student student;
+	
 	Leader leader1;
 
 	cout << leader1.getInfo() << endl;

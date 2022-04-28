@@ -9,6 +9,7 @@ class Student {
 private:
 	static int count;
 
+protected:
 	string name;
 	int age;
 	double mark;

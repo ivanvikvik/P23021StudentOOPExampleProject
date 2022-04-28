@@ -1,19 +1,19 @@
 #include "Leader.h"
 
 Leader::Leader(){
-	setName("no name");
-	setAge(14);
-	setMark(4);
-	setAlive(true);
+	name = "no name";
+	age = 14;
+	mark = 4;
+	alive = true;
 	phoneNumber = "no number";
 	e_mail = "no e-mail";
 }
 
 Leader::Leader(string name, int age, double mark, char sex, bool alive,
 	string phoneNumber, string e_mail){
-	setName(name);
-	setAge(age);
-	setMark(mark);
+	this->name = name;
+	this->age = age;
+	this->mark = mark;
 	this->phoneNumber = phoneNumber;
 	this->e_mail = e_mail;
 }
@@ -37,9 +37,9 @@ void Leader::setEmail(string e_mail){
 }
 
 string Leader::getInfo() {
-	return getName() + ": age = " + to_string(getAge())
-		+ "; mark = " + to_string(getMark())
-		+ "; alive = " + (isAlive() ? "yes" : "no")
+	return name + ": age = " + to_string(age)
+		+ "; mark = " + to_string(mark)
+		+ "; alive = " + (alive ? "yes" : "no")
 		+ "; phoneNumber = " + phoneNumber
 		+ "; e-mail = " + e_mail;
 }
