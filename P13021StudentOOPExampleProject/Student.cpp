@@ -7,6 +7,7 @@ int Student::getCount() {
 }
 
 Student::Student() {
+	//cout << "Call Student default constructor..." << endl;
 	count++;
 	name = "no name";
 	age = 14;
@@ -26,6 +27,8 @@ Student::Student(string name, int age, double mark, char sex, bool alive) {
 
 Student::~Student() {
 	count--;
+	//cout << "Call Student destructor..." << endl;
+
 }
 
 string Student::getName() {

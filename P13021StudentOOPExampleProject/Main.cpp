@@ -9,11 +9,11 @@ void changeMark(Student& st) {
 }
 
 int main() {
-	Student student;
+	//Student student;
 	
 	Leader leader1;
 
-	cout << leader1.getInfo() << endl;
+	//cout << leader1.getInfo() << endl;
 
 	//Group group1("10a");
 	/*Group group2("10b");

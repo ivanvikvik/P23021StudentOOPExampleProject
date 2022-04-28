@@ -1,24 +1,21 @@
 #include "Leader.h"
 
-Leader::Leader(){
-	name = "no name";
-	age = 14;
-	mark = 4;
-	alive = true;
+Leader::Leader() : Student() {
+	//cout << "Call Leader default constructor..." << endl;	
 	phoneNumber = "no number";
 	e_mail = "no e-mail";
 }
 
 Leader::Leader(string name, int age, double mark, char sex, bool alive,
-	string phoneNumber, string e_mail){
-	this->name = name;
-	this->age = age;
-	this->mark = mark;
+	string phoneNumber, string e_mail) : Student(name, age, mark, sex, alive) {
+	
 	this->phoneNumber = phoneNumber;
 	this->e_mail = e_mail;
 }
 
-Leader::~Leader(){}
+Leader::~Leader(){
+	//cout << "Call Leader destructor..." << endl;
+}
 
 string Leader::getPhoneNumber(){
 	return phoneNumber;
@@ -37,9 +34,7 @@ void Leader::setEmail(string e_mail){
 }
 
 string Leader::getInfo() {
-	return name + ": age = " + to_string(age)
-		+ "; mark = " + to_string(mark)
-		+ "; alive = " + (alive ? "yes" : "no")
+	return Student::getInfo()
 		+ "; phoneNumber = " + phoneNumber
 		+ "; e-mail = " + e_mail;
 }

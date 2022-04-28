@@ -1,9 +1,20 @@
 ﻿#pragma once
 #include "Header.h"
 
+class Human {
+public:
+	Human() {
+		cout << "Call Human default constructor..." << endl;
+	}
+
+	~Human() {
+		cout << "Call Human default constructor..." << endl;
+	}
+};
+
 
 // entity-class
-class Student {
+class Student : public Human {
 	friend void changeMark(Student& st);
 
 private:
