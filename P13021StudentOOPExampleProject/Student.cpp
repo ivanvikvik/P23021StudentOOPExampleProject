@@ -80,5 +80,6 @@ void Student::setAlive(bool alive) {
 string Student::getInfo() {
 	return name + ": age = " + to_string(age)
 		+ "; mark = " + to_string(mark)
+		+ "; sex = " + (sex == 'm' ? "male" : "female")
 		+ "; alive = " + (alive ? "yes" : "no");
 }

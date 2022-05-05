@@ -4,17 +4,17 @@
 class Human {
 public:
 	Human() {
-		cout << "Call Human default constructor..." << endl;
+		//cout << "Call Human default constructor..." << endl;
 	}
 
 	~Human() {
-		cout << "Call Human default constructor..." << endl;
+		//cout << "Call Human default constructor..." << endl;
 	}
 };
 
 
 // entity-class
-class Student : public Human {
+class Student {
 	friend void changeMark(Student& st);
 
 private:
@@ -51,6 +51,6 @@ public:
 
 	static int getCount();
 
-	string getInfo();
+	virtual string getInfo();
 
 };

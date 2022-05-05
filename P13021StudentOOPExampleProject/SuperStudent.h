@@ -13,11 +13,11 @@ public:
 		string subject, string ability);
 	~SuperStudent();
 
-	string getSubject();
+	/*string getSubject();
 	void setSubject(string subject);
 	
 	string getAbility();
-	void setAbility(string ability);
+	void setAbility(string ability);*/
 
 	string getInfo();
 };
